@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PiP Livre</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon32.png" alt="" width="22" height="22">
+    <h1>PiP Livre</h1>
+    <span class="atalho" title="Shortcut to open PiP">Alt+Shift+P</span>
+  </header>
+
+  <button id="abrir-pip" class="primario" type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <rect x="2.5" y="4.5" width="19" height="15" rx="2"/>
+      <rect x="12" y="11.5" width="7" height="5" rx="1" fill="currentColor" stroke="none"/>
+    </svg>
+    Open PiP in this tab
+  </button>
+
+  <section>
+    <div class="titulo-secao">
+      <h2>Sites with the PiP button</h2>
+      <span id="contagem"></span>
+    </div>
+    <p class="ajuda">The PiP button shows on top of videos on these sites. On any other site, use Alt+Shift+P or the button above.</p>
+
+    <button id="adicionar-atual" class="secundario" type="button" hidden></button>
+
+    <form id="form-adicionar">
+      <input id="campo-site" type="text" placeholder="e.g. primevideo.com" autocomplete="off" spellcheck="false" aria-label="Site domain">
+      <button type="submit" class="secundario">Add</button>
+    </form>
+    <p id="erro" class="erro" role="alert" hidden></p>
+
+    <ul id="lista"></ul>
+    <p id="vazio" class="vazio" hidden>No sites in the list.</p>
+  </section>
+
+  <script src="popup.js"></script>
+</body>
+</html>
