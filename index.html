@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for the PiP Livre browser extension.">
+<title>PiP Livre Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  /* Layout: single readable column, a quiet header band in the extension's colors, sections as plain prose. */
+  :root {
+    --bg: #faf8fb;
+    --surface: #ffffff;
+    --fg: #1d1824;
+    --muted: #5f5769;
+    --line: #e6e0ea;
+    --accent: #d8113f;
+    --accent-soft: #fde7ec;
+    --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141119; --surface: #1d1925; --fg: #f1edf5; --muted: #a79fb2;
+      --line: #2e2838; --accent: #ff4d73; --accent-soft: #3a1825; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #141119; --surface: #1d1925; --fg: #f1edf5; --muted: #a79fb2;
+    --line: #2e2838; --accent: #ff4d73; --accent-soft: #3a1825; color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font: 400 17px/1.65 var(--font-body);
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 56px 72px;
+  }
+  main { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 36px; }
+
+  header { display: flex; flex-direction: column; gap: 14px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--accent); }
+  .brand svg { width: 28px; height: 28px; flex: none; }
+  h1 { font: 700 clamp(34px, 6vw, 48px)/1.08 var(--font-display); letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+  .meta { color: var(--muted); font-size: 15px; margin: 0; }
+
+  .summary {
+    background: var(--accent-soft);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin: 0;
+    font-size: 18px;
+  }
+  .summary strong { color: var(--accent); }
+
+  section { display: flex; flex-direction: column; gap: 10px; }
+  h2 { font: 700 23px/1.25 var(--font-display); margin: 0; text-wrap: balance; }
+  p { margin: 0; max-width: 65ch; }
+  ul { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 8px; }
+  code { font: 500 0.88em var(--font-mono); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; }
+
+  .perms { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+  .perm { display: grid; grid-template-columns: 9.5rem 1fr; gap: 6px 18px; padding: 14px 18px; border-top: 1px solid var(--line); }
+  .perm:first-child { border-top: none; }
+  .perm dt { font: 500 14px/1.6 var(--font-mono); color: var(--accent); }
+  .perm dd { margin: 0; min-width: 0; font-size: 16px; }
+  @media (max-width: 520px) { .perm { grid-template-columns: 1fr; } }
+
+  footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 20px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <rect x="2.5" y="4.5" width="19" height="15" rx="2"/>
+        <rect x="12" y="11.5" width="7" height="5" rx="1" fill="currentColor" stroke="none"/>
+      </svg>
+      PiP Livre
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Browser extension for Chrome, Opera and other Chromium browsers · Effective October 22, 2026</p>
+  </header>
+
+  <p class="summary"><strong>In short:</strong> PiP Livre does not collect, sell or share any personal data. It makes no network requests. The only thing it saves is the list of websites you choose in the extension.</p>
+
+  <section>
+    <h2>Data the extension stores</h2>
+    <p>PiP Livre saves one piece of information: the list of website domains where you want the Picture-in-Picture button to appear, such as <code>netflix.com</code>. You add and remove these sites yourself in the extension's popup.</p>
+    <p>This list is kept with the browser's own <code>chrome.storage.sync</code> storage. If you are signed in to your browser with sync turned on, your browser may sync the list between your own devices. The developer of PiP Livre never receives it.</p>
+  </section>
+
+  <section>
+    <h2>Data the extension does not collect</h2>
+    <ul>
+      <li>No personal information, such as your name, email address or account details.</li>
+      <li>No browsing history, page content, form data, passwords or cookies.</li>
+      <li>No information about the videos you watch.</li>
+      <li>No analytics, tracking, advertising identifiers or crash reports.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Why the extension needs its permissions</h2>
+    <dl class="perms">
+      <div class="perm"><dt>Site access</dt><dd>Granted only for netflix.com and crunchyroll.com by default, and for each site you add to the list, after your browser asks you to allow it. On those sites the extension shows its PiP button over videos. The script only checks whether the mouse is over a video. It does not read or change page content. Removing a site from the list gives its access back.</dd></div>
+      <div class="perm"><dt>activeTab</dt><dd>Gives temporary access to the current tab only when you press the shortcut (Alt+Shift+P) or click "Open PiP in this tab", so Picture-in-Picture also works on sites outside your list.</dd></div>
+      <div class="perm"><dt>scripting</dt><dd>Opens Picture-in-Picture in the current tab when you ask, and shows the PiP button on the sites in your list.</dd></div>
+      <div class="perm"><dt>storage</dt><dd>Saves your list of websites, as described above.</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Sharing with third parties</h2>
+    <p>PiP Livre does not send data to the developer or to anyone else. It contains no third-party code and loads nothing from the internet. Picture-in-Picture windows are created by your browser's built-in feature.</p>
+  </section>
+
+  <section>
+    <h2>Removing your data</h2>
+    <p>You can remove any site from the list in the extension's popup. Uninstalling the extension deletes the list from your browser.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If the way PiP Livre handles data ever changes, this page will be updated and the effective date above will change before the new version of the extension is published.</p>
+  </section>
+
+  <footer>PiP Livre · Privacy Policy · Last updated October 22, 2026</footer>
+</main>
+</body>
+</html>
